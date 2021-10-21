@@ -1,13 +1,14 @@
 # Build a Next.js Application with TypeScript
 
-This is the companion code for [this blog post]().
+This is the companion code for [this blog post](https://developer.okta.com/blog/2020/11/13/nextjs-typescript).
 
 ## Getting Started
 
 Clone the repository:
 
 ```sh
-git clone 
+git clone https://github.com/oktadev/okta-nextjs-typescript-example.git
+cd okta-nextjs-typescript-example
 ```
 
 Get all the dependencies:
