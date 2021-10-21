@@ -21,11 +21,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-         Welcome to this Movies Demo
+          Welcome to This Movies Demo
         </h1>
 
         <p className={styles.description}>
-          A small demo of Next.Js using Okta
+          A small demo of Next.js using Okta
         </p>
 
         <div className={styles.grid}>
@@ -53,7 +53,7 @@ export default function Home() {
           >
             <h3>Author &rarr;</h3>
             <p>
-             Learn More about the author of this tutorial
+              Learn more about the author of this tutorial
             </p>
           </a>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         A small tutorial written by&nbsp;<a target="_blank" rel="noreferrer" href="http://profile.fishbowlllc.com/">Nik Fisher</a>
-        &nbsp;using&nbsp;<a target="_blank" rel="noreferrer" href="https://nextjs.org">Next.js</a> 
+        &nbsp;using&nbsp;<a target="_blank" rel="noreferrer" href="https://nextjs.org">Next.js</a>
         &nbsp;powered by&nbsp;<a target="_blank" rel="noreferrer" href="https://www.okta.com/">Okta</a>.
       </footer>
     </div>

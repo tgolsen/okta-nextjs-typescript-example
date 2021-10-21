@@ -17,6 +17,23 @@ Get all the dependencies:
 npm install
 ```
 
+Install the [Okta CLI](https://cli.okta.com) and run `okta apps create`. Use `Next.js` for the app name, choose **Web**, and press **Enter**.
+
+Use `http://localhost:3000/api/auth/callback/okta` for the Redirect URI and accept the default Logout Redirect URI of `http://localhost:3000`.
+
+Your issuer, client ID, and client secret will be stored in an `.okta.env` file in your current directory.
+
+Create a `.env.local` in the root directory and copy the values from `.okta.env` into it.
+
+```JSON
+OKTA_CLIENTID={yourClientId}
+OKTA_CLIENTSECRET={yourClientSecret}
+OKTA_DOMAIN={yourOktaIssuer}
+NEXTAUTH_URL=http://localhost:3000
+```
+
+**NOTE**: The `{yourOktaIssuer}` value should not have an `https://` prefix. For example, `dev-133337.okta.com/oauth2/default`.
+
 Run the application:
 
 ```sh
