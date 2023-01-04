@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
-import Header from '../components/Header'
-import Unauthorized from '../components/Unauthorized'
-import Movies from '../components/Movies'
+import Header from "../components/Header";
+import Unauthorized from "../components/Unauthorized";
+import Movies from "../components/Movies";
 
-import { useSession } from 'next-auth/client'
+import { useSession } from "next-auth/react";
 
 export default function Dashboard() {
+  const { data: session, status } = useSession();
+  // const [session, loading] = useSession();
 
-  const [session, loading] = useSession();
-
-  var content = session ? <Movies></Movies> : <Unauthorized></Unauthorized>
+  var content = session ? <Movies></Movies> : <Unauthorized></Unauthorized>;
 
   return (
     <div className="container">
@@ -25,7 +25,6 @@ export default function Dashboard() {
       <Header></Header>
 
       {content}
-
     </div>
-  )
+  );
 }
