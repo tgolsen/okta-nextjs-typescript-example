@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev": "export SET NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && next build"
   },
   "dependencies": {
     "@types/node": "^16.11.2",
