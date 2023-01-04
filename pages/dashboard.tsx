@@ -11,9 +11,13 @@ import { useSession } from "next-auth/react";
 
 export default function Dashboard() {
   const { data: session, status } = useSession();
-  // const [session, loading] = useSession();
 
-  var content = session ? <Movies></Movies> : <Unauthorized></Unauthorized>;
+  var content = <></>;
+  if (session && status == "authenticated") {
+    content = <Movies></Movies>;
+  } else {
+    content = <Unauthorized></Unauthorized>;
+  }
 
   return (
     <div className="container">
